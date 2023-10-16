@@ -132,16 +132,11 @@ const ContactButton = styled.input`
 `;
 
 const Contact = () => {
-	//hooks
 	const [open, setOpen] = React.useState(false);
 	const form = useRef();
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		// emailjs.send("service_rl082ai","template_m8xtork",{
-		//   from_name: "Dishang",
-		//   to_name: from_name,
-		//   });
 		emailjs
 			.sendForm(
 				"service_rl082ai",
@@ -152,11 +147,10 @@ const Contact = () => {
 			.then(
 				(result) => {
 					setOpen(true);
-          form.current.reset();
+					form.current.reset();
 				},
 				(error) => {
 					console.log(error.text);
-					// setOpen(true);
 				}
 			);
 	};
