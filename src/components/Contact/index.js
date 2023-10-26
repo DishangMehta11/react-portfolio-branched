@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { Snackbar } from "@mui/material";
+import "../../App.css";
 
 const Container = styled.div`
 	display: flex;
@@ -146,7 +147,7 @@ const Contact = () => {
 			)
 			.then(
 				(result) => {
-					setOpen(true);
+		setOpen(true);
 					form.current.reset();
 				},
 				(error) => {
@@ -156,7 +157,7 @@ const Contact = () => {
 	};
 
 	return (
-		<Container>
+		<Container id="contact">
 			<Wrapper>
 				<Title>Contact</Title>
 				<Desc>
@@ -172,7 +173,7 @@ const Contact = () => {
 				</ContactForm>
 				<Snackbar
 					open={open}
-					autoHideDuration={500000}
+					autoHideDuration={5000}
 					onClose={() => setOpen(false)}
 					message="Email sent successfully!"
 					severity="success"
