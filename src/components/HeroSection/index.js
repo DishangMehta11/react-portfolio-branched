@@ -16,6 +16,7 @@ import {
 import HeroImg from "../../images/HeroImage.png";
 import Typewriter from "typewriter-effect";
 import { Bio } from "../../data/constants";
+import Resume from "../../Assets/resume.pdf";
 
 const HeroSection = () => {
 	return (
@@ -42,7 +43,7 @@ const HeroSection = () => {
 							</Span>
 						</TextLoop>
 						<SubTitle>{Bio.description}</SubTitle>
-						<ResumeButton href={Bio.resume} target="display">
+						<ResumeButton href={Resume} target="_blank" download={"Dishang's Resume"}>
 							Check Resume
 						</ResumeButton>
 					</HeroLeftContainer>
