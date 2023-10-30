@@ -318,7 +318,7 @@ export const projects = [
         ],
         category: "computer vision",
         github: "https://github.com/DishangMehta11/Hand-Gestures/blob/main/Virtual_Painter.py",
-        webapp: "/"
+        webapp: "https://github.com/DishangMehta11/Hand-Gestures/blob/main/Virtual_Painter.py"
 
 
     },
